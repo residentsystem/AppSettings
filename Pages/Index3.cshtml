@@ -1,0 +1,38 @@
+@page
+@model Index3Model
+@{
+}
+
+<div class="container intro">
+    <section class="row col-sm-12">
+        <article class="col-sm-12 col-md-12 col-lg-12">
+            <header>
+                <h1>AppSettings</h1>
+                <p class="subtitle">Configuration from an XML file</p>
+            </header>
+        </article>
+    </section>
+</div>
+
+<div class="container">
+    <section class="row col-sm-12">
+        <article class="col-sm-12 col-md-12 col-lg-12">
+            <div class="box-display">
+
+                <h2>Configuration from an XML file</h2>
+
+                <p>In this example we use the derived class XmlConfigurationProvider to read configuration data from an XML file key-value pairs and display its values. The settings 
+                are contained in the file websitesettings.xml. The following list represent a website connection properties.</p>
+
+                <ul>
+                    <li>Hostname: <span>@Model.Hostname</span></li>
+                    <li>SiteUrl: <span>@Model.SiteUrl</span></li>
+                    <li>Protocol: <span>@Model.Protocol</span></li>
+                    <li>Ssl: <span>@Model.Ssl</span></li>
+                    <li>Port: <span>@Model.Port</span></li>
+                </ul>
+
+            </div>
+        </article>
+    </section>
+</div>

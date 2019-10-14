@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <website>
+    <hostname>dotnet</hostname>
+    <siteurl>dotnet.microsoft.com</siteurl>
+    <protocol>https</protocol>
+    <ssl>true</ssl>
+    <port>443</port>
+  </website>
+</configuration>

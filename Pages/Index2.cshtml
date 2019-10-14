@@ -1,0 +1,57 @@
+﻿@page
+@model Index2Model
+@{
+}
+
+<div class="container intro">
+    <section class="row col-sm-12">
+        <article class="col-sm-12 col-md-12 col-lg-12">
+            <header>
+                <h1>AppSettings</h1>
+                <p class="subtitle">Configuration from a JSON file</p>
+            </header>
+        </article>
+    </section>
+</div>
+
+<div class="container">
+    <section class="row col-sm-12">
+        <article class="col-sm-12 col-md-12 col-lg-12">
+            <div class="box-display">
+
+                <p>ASP.Net Core application's settings are contained in the file appsettings.json by default. This file is meant to replace settings previously located 
+                in web.config.</p>
+                
+                <h2>Configuration from a JSON file</h2>
+                
+                <p>In this example we use the derived class JsonConfigurationProvider to read configuration data from a JSON file key-value pairs and display its values. The settings 
+                are contained in the file appsettings.json. The following list represent information you could use to build a connection string for connecting to a database.</p>
+
+                <ul>
+                    <li>ServerName: <span>@Model.SqlServerName</span></li>
+                    <li>InstanceName: <span>@Model.InstanceName</span></li>
+                    <li>DatabaseName: <span>@Model.DatabaseName</span></li>
+                    <li>UserId: <span>@Model.UserId</span></li>
+                    <li>Password: <span>@Model.Password</span></li>
+                </ul>
+
+                <p>ConnectionString: "@Model.ConnectionString"</p>
+
+                <h3>Custom Settings</h3>
+
+                <p>Application's settings can also be located in a custom configuration file. In this example, we read the configuration from custom file serversettings.json and 
+                display its values. The list represent information about a Windows Server 2019 domain controller.</p>
+
+                <ul>
+                    <li>Server: <span>@Model.ServerName</span></li>
+                    <li>IPAddress: <span>@Model.IPAddress</span></li>
+                    <li>OperatingSystem: <span>@Model.OperatingSystem</span></li>
+                    <li>Domain: <span>@Model.Domain</span></li>
+                </ul>
+
+                <p>Note. In production, an application would never display sensitive information this way. In fact, never store sensitive data in configuration provider code 
+                or in plain text configuration files.</p>
+            </div>
+        </article>
+    </section>
+</div>

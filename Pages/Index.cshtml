@@ -1,0 +1,49 @@
+@page
+@model IndexModel
+@{
+}
+
+<div class="container intro">
+    <section class="row col-sm-12">
+        <article class="col-sm-12 col-md-12 col-lg-12">
+            <header>
+                <h1>AppSettings</h1>
+                <p class="subtitle">Configuration from a INI file</p>
+            </header>
+        </article>
+    </section>
+</div>
+
+<div class="container">
+    <section class="row col-sm-12">
+        <article class="col-sm-12 col-md-12 col-lg-12">
+            <div class="box-display">
+
+                <h2>Configuration Providers</h2>
+
+                <p>Application configuration using a configuration file is based on key-value pairs established by configuration providers. FileConfigurationProvider is the 
+                base class for loading configuration from the file system. The following configuration providers are dedicated to specific file types:</p>
+
+                <ul>
+                    <li>The IniConfigurationProvider loads configuration from a INI file.</li>
+                    <li>The JsonConfigurationProvider loads configuration from a JSON file.</li>
+                    <li>The XmlConfigurationProvider loads configuration from a XML file.</li>
+                </ul>
+
+                <h2>Configuration from INI file</h2>
+
+                <p>In this example we use the derived class IniConfigurationProvider to read configuration data from an INI file key-value pairs and display its values. The settings 
+                are contained in the file consolesettings.ini. The following list represent a gaming console properties including its owner.</p>
+
+                <ul>
+                    <li>Owner: <span>@Model.Owner</span></li>
+                    <li>Developper: <span>@Model.Developper</span></li>
+                    <li>Product: <span>@Model.Product</span></li>
+                    <li>Storage: <span>@Model.Storage</span></li>
+                    <li>Display: <span>@Model.Display</span></li>
+                </ul>
+
+            </div>
+        </article>
+    </section>
+</div>

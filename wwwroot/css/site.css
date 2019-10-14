@@ -1,0 +1,171 @@
+﻿/* -------------------------------------------- Body -------------------------------------------- */
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fff;
+    color: #1c1c1c;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    font-size: 110%;
+    line-height: 1.4em;
+}
+
+#wrapper {
+    min-height:100%;
+    position: relative;
+}
+
+#main {
+    padding: 0.6em;
+    padding-bottom: 6.25em; /* height of the footer */
+}
+
+#footer {
+    background-color: #000;
+    bottom: 0;
+    height: 6.25em; /* height of the footer */
+    position: absolute;
+    width: 100%;
+}
+
+/* -------------------------------------------- Bootstrap -------------------------------------------- */
+
+.col-center {
+    float: none;
+    margin: 5% auto;
+}
+
+/* -------------------------------------------- Button -------------------------------------------- */
+
+a.btn-dark {
+    background-color: #2b2b2b;
+    color: #f0f0f0;
+    margin: 1%;
+}
+
+a.btn-dark:hover {
+    background-color: #151515;
+    color: #f0f0f0;
+}
+
+/* -------------------------------------------- General -------------------------------------------- */
+
+h1 {
+    font-size: 2.5em;
+    line-height: 1.2em; 
+    margin: 0.5em 0 0.2em 0;
+}
+
+h2, h3 {
+    line-height: 1.2em; 
+    margin: 0.5em 0 0.5em 0;
+}
+
+h2 {
+    font-size: 1.4em;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+p {
+    font-size: 1.0em;
+    line-height: 1.5em;
+    margin: 0.5em 0 0.5em 0; 
+}
+
+a {
+    color: #0093d0;
+    font-size: 1.0em;
+    text-decoration: none;
+}
+
+a:hover, a:active, a:focus {
+    color: #04cbf5;
+}
+
+span {
+    color: #0093d0;
+    font-weight: 600;
+}
+
+.subtitle {
+    font-size: 1.5em;
+    margin: 0.2em 0 0.2em 0; 
+}
+
+/* -------------------------------------------- Display -------------------------------------------- */
+
+.box-display {
+    position: relative;
+}
+
+.box-display {
+    margin: 1.0em;
+    padding: 1.0em;
+    width: 100%;
+    height: auto;
+}
+
+/* -------------------------------------------- Navbar -------------------------------------------- */
+
+.navbar-custom {
+    background-color: #000;
+}
+
+.navbar-custom .navbar-nav .nav-link {
+    color: #0093d0;
+    font-size: 1.0em;
+} 
+
+.navbar-custom .navbar-text {
+    color: #0093d0;
+    font-size: 1.0em;
+    padding: 0.5em;
+}
+
+.navbar-custom .nav-item.active .nav-link, 
+.navbar-custom .nav-item:hover .nav-link {
+    color: #04cbf5;
+}
+
+.custom-toggler.navbar-toggler {
+    border-color: rgb(0, 147, 208);
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,147,208, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+/* -------------------------------------------- Intro -------------------------------------------- */
+
+.intro figure img {
+    display: block; 
+    margin: 0 auto; 
+    min-width: 22.5em; 
+    max-width: 100%; 
+    height: auto;
+}
+
+.intro, .intro h1, .intro h2, .intro p, .intro a {
+    display: block;
+    text-align: center;
+}
+
+/* -------------------------------------------- Footer -------------------------------------------- */
+
+.footer {
+    background-color: #2b2b2b;
+    background-image: url(../images/footer/footer.png);
+    background-repeat: repeat;
+}
+
+.footer p {
+    color: #0093d0;
+    margin: 1.25em;
+}
