@@ -55,8 +55,7 @@ a.btn-dark:hover {
 /* -------------------------------------------- General -------------------------------------------- */
 
 h1 {
-    font-size: 2.5em;
-    line-height: 1.2em; 
+    font-size: 2.0em;
     margin: 0.5em 0 0.2em 0;
 }
 
@@ -75,13 +74,13 @@ h3 {
 
 p {
     font-size: 1.0em;
-    line-height: 1.5em;
-    margin: 0.5em 0 0.5em 0; 
+    line-height: 1.2em;
+    margin: 0.8em 0 0.8em 0; 
 }
 
 a {
     color: #0093d0;
-    font-size: 1.0em;
+    font-size: 1.1em;
     text-decoration: none;
 }
 
@@ -89,14 +88,13 @@ a:hover, a:active, a:focus {
     color: #04cbf5;
 }
 
+.box-display ul {
+    margin-bottom: 40px;
+}
+
 span {
     color: #0093d0;
     font-weight: 600;
-}
-
-.subtitle {
-    font-size: 1.5em;
-    margin: 0.2em 0 0.2em 0; 
 }
 
 /* -------------------------------------------- Display -------------------------------------------- */
